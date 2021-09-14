@@ -2,7 +2,7 @@
 
 describe('hi',function()
 {
-    it("hello hi",function()
+    it("hello",function()
     {
         //cy.visit("https://rahulshettyacademy.com/AutomationPractice")
         cy.visit('https://example.com/')
