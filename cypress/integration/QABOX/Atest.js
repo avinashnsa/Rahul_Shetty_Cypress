@@ -32,13 +32,4 @@ describe('My First Suite testing branch',function()
             //cy.go('back')
             //cy.contains('Topics').should('eq','Topics')
         })
-
-        it.only('key',()=>{
-            cy.window().should(win =>{
-                expect(win.localStorage.length).to.eq(0)
-                win.localStorage.setItem('name','Avinash')
-                expect(win.localStorage.getItem('name')).to.eq('Avinash')
-
-            })
-        })
     })
