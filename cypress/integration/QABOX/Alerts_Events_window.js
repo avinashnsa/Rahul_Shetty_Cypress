@@ -30,7 +30,6 @@ before(()=>
 
     })
 
-
     it("confirm test",()=>
     {
         cy.on('window:confirm',(str)=>
@@ -53,15 +52,11 @@ before(()=>
         
     })
 
-
-
-
-
     it('promt',()=>
     {
-        cy.window().then(str => 
+        cy.window().then(prmt => 
             {
-                cy.stub(str,"prompt").returns('Avi')
+                cy.stub(prmt,"prompt").returns('Avi')
                 cy.get('#prompt').click()
             })
     })
